@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_contants.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_text_style.dart';
+import '../../../../core/widgets/custom_btn.dart';
 
 class CustomPageViewItem extends StatelessWidget {
   const CustomPageViewItem({super.key});
@@ -36,6 +39,32 @@ class CustomPageViewItem extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
+          SizedBox(height: 115.0.h),
+          SmoothPageIndicator(
+            controller: PageController(),
+            count: 3,
+            axisDirection: Axis.horizontal,
+            effect: SlideEffect(
+              radius: 4.0,
+              paintStyle: PaintingStyle.stroke,
+              strokeWidth: 1,
+              dotWidth: 8.0.w,
+              dotHeight: 8.0.h,
+              dotColor: AppColors.skipColor,
+              activeDotColor: AppColors.primaryColor,
+            ),
+          ),
+          SizedBox(height: 20.0.h),
+          CustomButton(
+            padding: AppContants.kHorizontalPadding,
+            text: AppStrings.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            onPressed: () {},
+            style: AppTextStyles.cairo700whiteColor13.copyWith(
+              color: AppColors.white,
+              fontSize: 16.sp,
+            ),
+          )
         ],
       ),
     );

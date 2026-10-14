@@ -16,7 +16,8 @@ dependencies:
   flutter_svg: ^2.0.9
   # a package for adaptive and responsive screen design in Flutter
   flutter_screenutil: ^5.9.3
-
+  # a dependency to make Customizable animated page indicator with a set of built-in effects.
+  smooth_page_indicator: ^1.2.1
   # a dependency to manage navigation and routing in Flutter applications
   go_router: ^15.1.2
   # a dependency for bottom navigation bar with persistent state in Flutter applications
