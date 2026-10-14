@@ -10,13 +10,29 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.8
+  # an svg package to render SVG images in Flutter
+  flutter_svg: ^2.0.9
+  # a package for adaptive and responsive screen design in Flutter
+  flutter_screenutil: ^5.9.3
+  # dependency to can make icon for my app
+  flutter_launcher_icons: ^0.13.1
 
 #==================================  Dev  Dependencies  Section  ==============================
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+#==================================  Flutter  Launcher Icons  Section  ==============================
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 24 # android min sdk min:16, default 21
+  adaptive_icon_background: "#A67C52"
+  adaptive_icon_foreground: "assets/logo.png"
 
 #==================================  Flutter  Section Add Images and Fonts ==============================
 flutter:
@@ -45,3 +61,7 @@ flutter:
           weight: 700
 
 #==================================  Generate  Flutter  Assets  Section  ==============================
+flutter_assets:
+  assets_path: assets/svgs/
+  output_path: lib/core/utils/
+  filename: app_assets.dart
