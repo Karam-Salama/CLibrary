@@ -18,6 +18,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   # dependency to can make icon for my app
   flutter_launcher_icons: ^0.13.1
+  # a dependency to manage navigation and routing in Flutter applications
   go_router: ^15.1.2
 
 #==================================  Dev  Dependencies  Section  ==============================
