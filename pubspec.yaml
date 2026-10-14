@@ -20,6 +20,9 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   # a dependency to manage navigation and routing in Flutter applications
   go_router: ^15.1.2
+  persistent_bottom_nav_bar: ^6.2.1
+  shared_preferences: ^2.5.3
+  get_it: ^9.3.0
 
 #==================================  Dev  Dependencies  Section  ==============================
 dev_dependencies:
