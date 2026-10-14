@@ -1,0 +1,3 @@
+class AppContants {
+  AppContants._();
+}
