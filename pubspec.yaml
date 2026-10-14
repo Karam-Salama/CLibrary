@@ -16,20 +16,25 @@ dependencies:
   flutter_svg: ^2.0.9
   # a package for adaptive and responsive screen design in Flutter
   flutter_screenutil: ^5.9.3
-  # dependency to can make icon for my app
-  flutter_launcher_icons: ^0.13.1
+
   # a dependency to manage navigation and routing in Flutter applications
   go_router: ^15.1.2
+  # a dependency for bottom navigation bar with persistent state in Flutter applications
   persistent_bottom_nav_bar: ^6.2.1
+  # a dependency to store and retrieve simple data in Flutter applications
   shared_preferences: ^2.5.3
+  # a dependency to apply singlton pattern in Flutter applications
   get_it: ^9.3.0
+  flutter_localizations:
+    sdk: flutter
 
 #==================================  Dev  Dependencies  Section  ==============================
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
+  # dependency to can make icon for my app
+  flutter_launcher_icons: ^0.13.1
 #==================================  Flutter  Launcher Icons  Section  ==============================
 flutter_launcher_icons:
   android: "launcher_icon"

@@ -9,4 +9,5 @@ abstract class AppColors {
   static const primaryTextColor = Color(0xFFF7F3EC);
   static const secondaryTextColor = Color(0xFFC9D2C7);
   static const grayTextColor = Color(0xFFF7F3EC);
+  static const skipColor = Color(0xFF5B6660);
 }

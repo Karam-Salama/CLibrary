@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/routes/app_router.dart';
@@ -10,12 +11,18 @@ class CLibrary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      minTextAdapt: true,
-      child: MaterialApp.router(
-        title: AppStrings.appName,
-        routerConfig: router,
-        debugShowCheckedModeBanner: false,
-      ),
-    );
+        minTextAdapt: true,
+        child: MaterialApp.router(
+          title: AppStrings.appName,
+          routerConfig: router,
+          debugShowCheckedModeBanner: false,
+          locale: const Locale('ar'),
+          supportedLocales: const [Locale('ar')],
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+        ));
   }
 }
